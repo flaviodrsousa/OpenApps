@@ -5,6 +5,7 @@
 #include "menu.h"
 
 int main() {
+
    int o = 0;
    do{
     o = menu();
@@ -31,8 +32,12 @@ int main() {
             }
             c = getchar();
             }
+    
+    //Mostrar Histórico
+    } else if(o == 3){
+        system("clear");
     } 
-    }while(o != 3);
+    }while(o != 4);
 
    system("clear");
    exit(0);

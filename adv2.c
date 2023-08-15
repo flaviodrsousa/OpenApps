@@ -3,10 +3,8 @@
 #include <time.h>
 
 int adv2(){
-     // Inicializar o gerador de números aleatórios
     srand(time(NULL));
     
-    // Gerar um número aleatório entre 1 e 100
     int numeroSecreto = rand() % 100 + 1;
     int palpite;
     int tentativas = 0;

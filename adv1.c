@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "historico_adv1_guardar.h"
 
 int adv1(){
-     // Inicializar o gerador de números aleatórios
-    srand(time(NULL));
-    
-    // Gerar um número aleatório entre 1 e 100
+
     int numeroSecreto;
     int palpite;
     int tentativas = 0;
@@ -38,5 +36,7 @@ int adv1(){
         }
 
     }
+    
+    historico_adv1_guardar(tentativas);
 return 0;
 }
