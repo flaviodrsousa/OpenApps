@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int historico_adv1_guardar(int ten){
+int historico_adv2_guardar(int ten){
     
     FILE *arquivo;
-    char nome[] = "historico_adv1";
+    char nome[] = "historico_adv2";
     char linha[100];
     
     arquivo = fopen(nome, "r");
@@ -13,7 +13,7 @@ int historico_adv1_guardar(int ten){
     if(arquivo != NULL){
 
         FILE *temp;
-        char nome_temp[] = "historico_adv1_temp";
+        char nome_temp[] = "historico_adv2_temp";
         int i = 0;
         int v = 0;
         temp = fopen(nome_temp, "w");
@@ -57,7 +57,7 @@ int historico_adv1_guardar(int ten){
 
    } else {
         arquivo = fopen(nome, "w");
-        fprintf(arquivo, "---Histórico adv1---\n%d\n0\n0",ten);
+        fprintf(arquivo, "---Histórico adv2---\n%d\n0\n0",ten);
         fclose(arquivo);
     }
 

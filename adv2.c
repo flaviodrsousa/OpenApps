@@ -32,5 +32,5 @@ int adv2(){
         }
 
     }
-return 0;
+return tentativas;
 }

@@ -37,6 +37,5 @@ int adv1(){
 
     }
     
-    historico_adv1_guardar(tentativas);
-return 0;
+return tentativas;
 }
